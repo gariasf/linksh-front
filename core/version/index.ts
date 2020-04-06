@@ -1,1 +1,3 @@
-export const APP_VERSION = "0.1.0";
+const appPackage = require("package.json")
+
+export const APP_VERSION = appPackage.version;
