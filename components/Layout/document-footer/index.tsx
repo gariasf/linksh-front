@@ -5,8 +5,8 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 
 import ReactMarkdown from "react-markdown";
 
@@ -41,7 +41,7 @@ export const DocumentFooter = () => {
   }, [open]);
 
   const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <footer>
@@ -50,7 +50,7 @@ export const DocumentFooter = () => {
         <span>linksh v{APP_VERSION}</span>
       </Button>
       <Dialog
-      fullScreen={fullScreen}
+        fullScreen={fullScreen}
         open={open}
         onClose={handleClose}
         scroll={scroll}
