@@ -42,6 +42,13 @@ module.exports = withSass({
       config.resolve.plugins = [new TsconfigPathsPlugin()];
     }
 
+    config.module.rules.push(
+      {
+        test: /\.md$/,
+        use: 'raw-loader'
+      }
+    )
+
     return config;
   }
 });

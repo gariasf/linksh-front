@@ -19,6 +19,7 @@
     "preact-render-to-string": "^5.1.4",
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
+    "react-markdown": "^4.3.1",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "node-sass": "^4.13.1",
     "prettier": "^2.0.4",
+    "raw-loader": "^4.0.0",
     "stylelint": "^13.3.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-prettier": "^1.1.2",
