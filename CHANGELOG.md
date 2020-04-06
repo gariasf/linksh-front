@@ -1,27 +1,36 @@
-# Changelog: linksh-front
+### 0.4.0 (2020-04-06)
 
-<a name="0.3.0"></a>
-## 0.3.0 (2020-04-06)
+#### Added
 
-### Features
+- Implemented changelog visibility within application dialog
+- Applied MaterialUI CSS baseline
+- Added typography CSS base
 
-- Load Material Design Icons font
+#### Changed/Improved
+- Refactored CHANGELOG.md
+- Improved CSS reset
+- Made footer version fetching dynamic
 
+### 0.3.0 (2020-04-06)
 
-<a name="0.2.0"></a>
-## 0.2.0 (2020-04-06)
+#### Added
 
-### Features
+- Load Material Design Icons font on index.html
+
+### 0.2.0 (2020-04-06)
+
+#### Added
 
 - Added [@material-ui](https://material-ui.com/)
 - Added changelog
 
-<a name="0.1.0"></a>
-## 0.1.0 (2020-04-06)
+### 0.1.0 (2020-04-06)
 
-### Features
+#### Added
 
 - New project backbone structure divided on /components, /core, /pages, /shared and /public
 - Added tslint and stylelint support for linting
 - Added puppeteer for pipeline integration
+
+#### Changed
 - Refactored most of the code
