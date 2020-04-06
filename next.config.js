@@ -1,4 +1,5 @@
 const withSass = require('@zeit/next-sass')
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = withSass({
   experimental: {
@@ -33,6 +34,12 @@ module.exports = withSass({
         entries['main.js'] = ['preact/debug'].concat(entries['main.js'] || []);
         return entries;
       });
+    }
+
+    if (config.resolve.plugins) {
+      config.resolve.plugins.push(new TsconfigPathsPlugin());
+    } else {
+      config.resolve.plugins = [new TsconfigPathsPlugin()];
     }
 
     return config;
