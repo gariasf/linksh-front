@@ -4,9 +4,11 @@ import { DocumentContent } from "./document-content";
 import { DocumentFooter } from "./document-footer";
 
 import "./styles.scss";
+import { CssBaseline } from "@material-ui/core";
 
 export const Layout = (props: { children: React.ReactNode }) => (
   <div className="layout">
+    <CssBaseline />
     <DocumentHead />
     <DocumentContent>{props.children}</DocumentContent>
     <DocumentFooter />
