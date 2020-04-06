@@ -1,5 +1,13 @@
 # Changelog: linksh-front
 
+<a name="0.3.0"></a>
+## 0.3.0 (2020-04-06)
+
+### Features
+
+- Load Material Design Icons font
+
+
 <a name="0.2.0"></a>
 ## 0.2.0 (2020-04-06)
 
