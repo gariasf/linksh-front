@@ -30,7 +30,6 @@
 
 - New project backbone structure divided on /components, /core, /pages, /shared and /public
 - Added tslint and stylelint support for linting
-- Added puppeteer for pipeline integration
 
 #### Changed
 - Refactored most of the code
