@@ -1,3 +1,8 @@
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules
+
 stages:
   - install-dependencies
   - build
@@ -6,9 +11,6 @@ stages:
 dependencies:
   stage: install-dependencies
   image: node:12
-  cache:
-    paths:
-      - node_modules
   script: 
     - yarn
   only:
