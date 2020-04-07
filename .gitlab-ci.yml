@@ -1,17 +1,41 @@
 stages:
-  - build-app
+  - install-dependencies
+  - build
+  - deploy
 
-build app:
-  stage: build-app
+dependencies:
+  stage: install-dependencies
   image: node:12
-  script:
-    - yarn
-    - yarn lint
-    - yarn build
   cache:
     paths:
       - node_modules
+  script: 
+    - yarn
+  only:
+    changes: 
+      - yarn.lock
+
+build:
+  stage: build
+  image: node:12
+  script:
+    - yarn lint
+    - yarn build
   artifacts:
     paths:
       - build
     expire_in: 1 day
+
+deploy:
+  stage: deploy
+  image: alpine
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+    - chmod 600 ~/.ssh/id_dsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav --delete build/ garasf@01.sv64.xyz:622:/var/www/nth/test
+  only:
+    - develop
+ 
