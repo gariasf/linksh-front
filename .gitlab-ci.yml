@@ -1,21 +1,6 @@
 stages:
-  - install-dependencies
   - build
   - deploy
-
-dependencies:
-  stage: install-dependencies
-  image: node:12
-  cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-      - node_modules
-  script: 
-    - yarn
-  rules:
-    - changes: 
-      - yarn.lock
-      when: always
 
 build:
   stage: build
@@ -25,6 +10,7 @@ build:
     paths:
       - node_modules
   script:
+    - yarn
     - yarn lint
     - yarn build
   artifacts:
