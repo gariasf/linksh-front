@@ -47,7 +47,7 @@ export const DocumentFooter = () => {
     <footer>
       <span>Nethruster</span>&nbsp;-&nbsp;
       <Button size="small" onClick={handleClickOpen("paper")}>
-        <span>linksh v{APP_VERSION}</span>
+        <span>Linksh v{APP_VERSION}</span>
       </Button>
       <Dialog
         fullScreen={fullScreen}
