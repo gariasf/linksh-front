@@ -4,7 +4,7 @@
 
 - Implemented changelog visibility within application dialog
 - Applied MaterialUI CSS baseline
-- Added typography CSS base
+- Added Typography CSS base
 
 #### Changed/Improved
 - Refactored CHANGELOG.md
