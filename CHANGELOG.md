@@ -1,3 +1,15 @@
+
+### 0.5.0 (2020-04-08)
+
+#### Added
+
+- Implemented Material UI theming (with dark mode)
+- Added base link form
+
+#### Changed/Improved
+- Improved CSS reset
+- General style fixes
+
 ### 0.4.0 (2020-04-06)
 
 #### Added
