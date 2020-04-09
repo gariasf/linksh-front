@@ -1,8 +1,9 @@
-import BrandBanner from "@components/brand-banner";
-import { Layout } from "@components/Layout";
-import ShortenLink from "@components/shorten-link";
-import "@shared/styles/index.scss";
 import React from "react";
+
+import BrandBanner from "@components/brand-banner";
+import ShortenLink from "@components/shorten-link";
+import Layout from "@components/layout";
+
 import "./styles.scss";
 
 const Index = () => {
