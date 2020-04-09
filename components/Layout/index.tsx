@@ -1,8 +1,8 @@
 import React from "react";
-import CssBaseline from '@material-ui/core/CssBaseline'
-import { ThemeProvider } from '@material-ui/core/styles';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider } from "@material-ui/core/styles";
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import { DocumentHead } from "./document-head";
 import { DocumentContent } from "./document-content";
@@ -52,4 +52,4 @@ const Layout = (props: { children: React.ReactNode }) => {
   );
 };
 
-export default Layout
+export default Layout;
