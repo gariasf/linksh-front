@@ -1,0 +1,30 @@
+.link-form {
+  display: flex;
+  justify-content: center;
+
+  &_card {
+    width: 100%;
+
+    .MuiCardContent-root:last-child {
+      padding-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+span.link-form_terms {
+  margin-top: 12px;
+}
+
+div.link-form_input {
+  margin-right: 32px;
+  flex: 1;
+
+  @media screen and (max-width: 700px) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}

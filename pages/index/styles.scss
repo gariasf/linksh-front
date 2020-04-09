@@ -1,6 +1,6 @@
 .home {
   text-align: center;
-  padding: 32px 0;
+  padding: 16px 0;
   flex: 1;
 
   &_hero-img {
@@ -12,10 +12,8 @@
     margin: 32px auto;
     display: flex;
     justify-content: center;
-    width: 80%;
-
-    &_card {
-      width: 100%;
-    }
+    width: 100%;
+    max-width: 800px;
   }
 }
+
