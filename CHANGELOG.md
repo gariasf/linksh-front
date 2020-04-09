@@ -1,4 +1,15 @@
 
+### 0.6.0 (2020-04-09)
+
+#### Features
+- Added favicons
+
+#### Changed/Improved
+- Refactored components
+- Improved page performance (pre-render static css)
+- Moved base theme to core
+- Removed custom reset (Material-UI already uses its own)
+
 ### 0.5.1 (2020-04-09)
 
 #### Changed/Improved
