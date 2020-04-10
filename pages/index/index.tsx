@@ -1,20 +1,20 @@
-import React from "react";
-
-import BrandBanner from "@components/brand-banner";
-import ShortenLink from "@components/shorten-link";
-import Layout from "@components/layout";
+import React, { useEffect } from "react";
 
 import "./styles.scss";
+import Router from "next/router";
+import { CircularProgress } from "@material-ui/core";
+import Layout from "@components/layout";
 
 const Index = () => {
+  useEffect(() => {
+    const { pathname } = Router;
+    if (pathname == "/") {
+      Router.push("/auth");
+    }
+  });
   return (
     <Layout>
-      <section className="home">
-        <BrandBanner />
-        <div className="home_hero">
-          <ShortenLink />
-        </div>
-      </section>
+      <CircularProgress color="secondary" />
     </Layout>
   );
 };
