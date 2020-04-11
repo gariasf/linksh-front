@@ -1,0 +1,22 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form {
+  &_input {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &_actions {
+    margin-top: 24px;
+    margin-left: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
