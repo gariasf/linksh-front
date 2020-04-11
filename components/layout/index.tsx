@@ -17,12 +17,9 @@ export const Layout = (props: { children: React.ReactNode }) => {
 
   return (
     <div className="layout">
-      <Head>
-        <title>Linksh | URL Shortener, Custom links & Link Managment</title>
-      </Head>
+      <DocumentHead />
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <DocumentHead />
         <DocumentContent>{props.children}</DocumentContent>
         <DocumentFooter />
       </ThemeProvider>
