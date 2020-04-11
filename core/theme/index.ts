@@ -1,6 +1,6 @@
 import { createMuiTheme } from "@material-ui/core";
 
-export default (prefersDarkMode) =>
+export default (prefersDarkMode: boolean) =>
   createMuiTheme({
     typography: {
       fontFamily: [

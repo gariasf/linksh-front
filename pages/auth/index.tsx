@@ -1,4 +1,4 @@
-import Layout from "@components/layout";
+import { Layout } from "@components/layout";
 import {
   Button,
   Card,
@@ -14,7 +14,7 @@ import AccountCircleOutline from "@material-ui/icons/AccountCircleOutlined";
 import VisibilityOffOutlined from "@material-ui/icons/VisibilityOffOutlined";
 import VisibilityOutlined from "@material-ui/icons/VisibilityOutlined";
 import VpnKeyOutlined from "@material-ui/icons/VpnKeyOutlined";
-import { useRouter } from "next/router";
+import { NextRouter, useRouter } from "next/router";
 import React from "react";
 import "./styles.scss";
 
@@ -26,7 +26,7 @@ interface State {
 }
 
 const Auth = () => {
-  const router = useRouter();
+  const router: NextRouter = useRouter();
   const [values, setValues] = React.useState<State>({
     username: "",
     password: "",
@@ -75,6 +75,7 @@ const Auth = () => {
                   id="login-username"
                   label="Username"
                   variant="outlined"
+                  autoComplete="current-username"
                   fullWidth
                   className="login-form_input"
                   InputProps={{

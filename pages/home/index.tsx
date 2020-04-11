@@ -1,11 +1,8 @@
+import { BrandBanner } from "@components/brand-banner";
+import { Layout } from "@components/layout";
+import { ShortenLink } from "@components/shorten-link";
 import React from "react";
-
-import BrandBanner from "@components/brand-banner";
-import ShortenLink from "@components/shorten-link";
-
 import "./styles.scss";
-import Layout from "@components/layout";
-import { Button, Link } from "@material-ui/core";
 
 const Home = () => {
   return (

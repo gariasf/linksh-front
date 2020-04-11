@@ -1,23 +1,19 @@
-import React from "react";
+import generateCoreTheme from "@core/theme";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { ThemeProvider } from "@material-ui/core/styles";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-
-import { DocumentHead } from "./document-head";
+import { Theme, ThemeProvider } from "@material-ui/core/styles";
+import "@shared/styles/index.scss";
+import Head from "next/head";
+import React from "react";
 import { DocumentContent } from "./document-content";
 import { DocumentFooter } from "./document-footer";
-
-import "@shared/styles/index.scss";
+import { DocumentHead } from "./document-head";
 import "./styles.scss";
 
-import generateCoreTheme from "@core/theme";
-import Head from "next/head";
-
-const Layout = (props: { children: React.ReactNode }) => {
+export const Layout = (props: { children: React.ReactNode }) => {
   // const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  const prefersDarkMode = false
-  const coreTheme = generateCoreTheme(prefersDarkMode);
-  const theme = React.useMemo(() => coreTheme, [prefersDarkMode]);
+  const prefersDarkMode = false;
+  const coreTheme: Theme = generateCoreTheme(prefersDarkMode);
+  const theme: Theme = React.useMemo(() => coreTheme, [prefersDarkMode]);
 
   return (
     <div className="layout">
@@ -33,5 +29,3 @@ const Layout = (props: { children: React.ReactNode }) => {
     </div>
   );
 };
-
-export default Layout;

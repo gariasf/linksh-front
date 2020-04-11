@@ -1,9 +1,9 @@
+import { Theme } from "@material-ui/core";
+import useTheme from "@material-ui/core/styles/useTheme";
 import React from "react";
 
-import useTheme from "@material-ui/core/styles/useTheme";
-
-const BrandBanner = () => {
-  const theme = useTheme();
+export const BrandBanner = () => {
+  const theme: Theme = useTheme();
   return (
     <svg
       id="a594c6a9-dc97-4497-a726-18f0f8835893"
@@ -168,5 +168,3 @@ const BrandBanner = () => {
     </svg>
   );
 };
-
-export default BrandBanner;

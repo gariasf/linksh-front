@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
-
-import "./styles.scss";
+import { Layout } from "@components/layout";
+import { CircularProgress, Backdrop } from "@material-ui/core";
 import Router from "next/router";
-import { CircularProgress } from "@material-ui/core";
-import Layout from "@components/layout";
+import React, { useEffect } from "react";
+import "./styles.scss";
 
 const Index = () => {
   useEffect(() => {
@@ -14,7 +13,9 @@ const Index = () => {
   });
   return (
     <Layout>
-      <CircularProgress color="secondary" />
+      <Backdrop className="loading-backdrop" open={true}>
+        <CircularProgress color="secondary" />
+      </Backdrop>
     </Layout>
   );
 };
