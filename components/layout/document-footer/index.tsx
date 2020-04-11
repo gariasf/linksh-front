@@ -1,4 +1,3 @@
-import { APP_VERSION } from "@core/version";
 import { Link } from "@material-ui/core";
 import React from "react";
 import "./styles.scss";
@@ -11,7 +10,7 @@ export const DocumentFooter = () => {
       </Link>
       &nbsp;-&nbsp;
       <Link href="https://github.com/nethruster/linksh-front" target="_blank">
-        <span>Linksh v{APP_VERSION}</span>
+        <span>Linksh</span>
       </Link>
     </footer>
   );
