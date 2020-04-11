@@ -14,7 +14,8 @@ import generateCoreTheme from "@core/theme";
 import Head from "next/head";
 
 const Layout = (props: { children: React.ReactNode }) => {
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  // const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const prefersDarkMode = false
   const coreTheme = generateCoreTheme(prefersDarkMode);
   const theme = React.useMemo(() => coreTheme, [prefersDarkMode]);
 
