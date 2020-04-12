@@ -48,6 +48,7 @@ export const DocumentHeader = () => {
       </div>
 
       <Menu
+        elevation={1}
         id="user-menu"
         anchorEl={anchorEl}
         getContentAnchorEl={null}

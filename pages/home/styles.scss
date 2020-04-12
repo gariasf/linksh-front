@@ -1,13 +1,20 @@
-.home {
-  text-align: center;
+.create-link {
+  margin: 0 auto;
   padding: 16px 0;
   flex: 1;
+  width: 100%;
+  max-width: 800px;
 
   &_hero {
     margin: 32px auto;
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 800px;
   }
+}
+
+.link-history {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

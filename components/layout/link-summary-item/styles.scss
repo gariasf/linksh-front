@@ -1,0 +1,29 @@
+.heading {
+  flex-basis: 33.33%;
+  flex-shrink: 0;
+}
+
+.subheading {
+  flex-basis: 61%;
+}
+
+.heading,
+.subheading {
+  display: grid;
+  align-items: center;
+  padding: 0 8px;
+}
+
+div.link-summary-header {
+  margin: 5px 0;
+}
+
+.helper {
+  border-left: 2px solid rgba(87, 87, 87, 0.24);
+  padding: 8px 16px;
+}
+
+.column {
+  flex-basis: 33.3%;
+  padding: 0 16px;
+}

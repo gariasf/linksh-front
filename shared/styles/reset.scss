@@ -6,7 +6,7 @@ body {
 /**
 * Next specific styles
 **/
-#__next,
-main {
-  height: 100%;
+#__next {
+  min-height: 100vh;
+  display: flex;
 }

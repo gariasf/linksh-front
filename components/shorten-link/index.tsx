@@ -4,30 +4,29 @@ import CardContent from "@material-ui/core/CardContent";
 import TextField from "@material-ui/core/TextField";
 import React from "react";
 import "./styles.scss";
+import { Paper } from "@material-ui/core";
 
 export const ShortenLink = () => {
   return (
-    <Card className="link-form_card" variant="outlined">
-      <CardContent>
-        <form autoComplete="off" noValidate className="link-form">
-          <TextField
-            name="url"
-            label="Shorten your link"
-            variant="outlined"
-            className="link-form_input"
-            color="secondary"
-          />
-          <Button
-            type="submit"
-            size="large"
-            variant="contained"
-            color="primary"
-            disableElevation
-          >
-            Shorten
-          </Button>
-        </form>
-      </CardContent>
-    </Card>
+    <Paper variant="outlined" className="link-form-container">
+      <form autoComplete="off" noValidate className="link-form">
+        <TextField
+          name="url"
+          label="Shorten your link"
+          variant="outlined"
+          className="link-form_input"
+          color="secondary"
+        />
+        <Button
+          type="submit"
+          size="large"
+          variant="contained"
+          color="primary"
+          disableElevation
+        >
+          Shorten
+        </Button>
+      </form>
+    </Paper>
   );
 };
