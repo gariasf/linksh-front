@@ -11,6 +11,7 @@ const Index = () => {
       Router.push("/auth");
     }
   });
+
   return (
     <Layout>
       <Backdrop className="loading-backdrop" open={true}>

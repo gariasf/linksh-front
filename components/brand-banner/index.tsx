@@ -2,13 +2,20 @@ import { Theme } from "@material-ui/core";
 import useTheme from "@material-ui/core/styles/useTheme";
 import React from "react";
 
-export const BrandBanner = () => {
+import "./styles.scss";
+
+interface Props {
+  maxWidth: number;
+}
+
+export const BrandBanner = ({ maxWidth }: Props) => {
   const theme: Theme = useTheme();
   return (
     <svg
       id="a594c6a9-dc97-4497-a726-18f0f8835893"
-      className="home_hero-img"
+      className="brand-img"
       viewBox="0 0 264.47 67.81"
+      style={{ maxWidth: `${maxWidth}px` }}
     >
       <defs>
         <linearGradient
