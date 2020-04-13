@@ -2,6 +2,14 @@ const withSass = require('@zeit/next-sass')
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = withSass({
+  exportTrailingSlash: true,
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' },
+      '/auth': { page: '/auth' },
+      '/home': { page: '/home' }
+    };
+  },
   experimental: {
     modern: true,
     polyfillsOptimization: true
